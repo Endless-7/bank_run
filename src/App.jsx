@@ -242,7 +242,8 @@ function App() {
   if (!gameState) {
     return (
       <div className="app-loading app-error">
-        无法连接游戏服务器，请确认已运行 <code>npm run dev</code>
+        无法连接游戏服务器。本地请运行 <code>npm run dev</code>，并配置{" "}
+        <code>.env.local</code> 中的 Supabase 环境变量。
       </div>
     );
   }
